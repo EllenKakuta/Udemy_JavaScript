@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --primary-color: rgb(199, 173, 149);
+    --primary-color-darker: rgb(175, 148, 122);
+    --primary-color-darker2:  rgb(128, 100, 74);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+   
+}
+
+
+
+.coluna{
+    width: 50%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 30px auto;
+    background:  rgb(175, 148, 122);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px;
+    
+}
+
+.titulo{
+    font-size: 1.5em;
+
+}
+
+.subtitulo{
+    font-size: 0.8em;
+}
+
+.texto{
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+.input{
+    font-size: 0.8em;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    border: none;
+    font-size: 24px;
+    height: 40px;
+    padding: 0 20px ;
+    border-radius: 10px;
+}
+
+form input:focus{
+    outline: 3px solid var(--primary-color-darker2);
+}
+
+form button{
+    border: none;
+    background: var(--primary-color);
+    color: rgb(20, 11, 1);
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px;
+}
+
+form button:hover{
+    background:  rgb(153, 129, 106);
+}
+
+form button:active{
+    background: var(--primary-color-darker2);
+    color: white;
+}
+
+.paragrafo-resultado{
+    background: rgb(76, 121, 98);
+    padding: 10px 20px ;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+.bad{
+    background: rgb(151, 46, 51);
+    padding: 10px 20px ;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+#resultado{
+    font-size: 0.7em;
+    color: azure;
+}
