@@ -1,0 +1,15 @@
+/*
+EXERCÍCIOS COM NODELIST (BROWSER)
+colocar a cor do fundo do body no parágrafo
+*/
+
+const paragrafos = document.querySelector('.paragrafos');
+const ps = paragrafos.querySelectorAll('p');
+const estilosBody = getComputedStyle(document.body);
+const backgroundColorBody = estilosBody.backgroundColor
+console.log(backgroundColorBody)
+
+for (let p of ps){
+   p.style.backgroundColor = backgroundColorBody
+   p.style.color = 'purple';
+}
